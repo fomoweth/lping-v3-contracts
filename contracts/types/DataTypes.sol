@@ -35,6 +35,7 @@ struct Position {
     int24 tickUpper;
     int24 tickInitial;
     uint32 createdAt;
+    bool usedEth;
 }
 
 struct Slot {

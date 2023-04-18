@@ -15,4 +15,8 @@ library Storage {
             s.slot := ptr
         }
     }
+
+    function checkOwner(address account) internal view {
+        if (get().owner != account) revert NotOwner();
+    }
 }
