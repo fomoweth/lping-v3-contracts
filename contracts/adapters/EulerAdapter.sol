@@ -8,9 +8,7 @@ import "../interfaces/external/Euler/IEToken.sol";
 import "../interfaces/external/Euler/IDToken.sol";
 import "../interfaces/ILender.sol";
 import "../libraries/FullMath.sol";
-import "../libraries/PercentageMath.sol";
 import "../libraries/TransferHelper.sol";
-import "../libraries/Wrapper.sol";
 
 contract EulerAdapter is ILender {
     using TransferHelper for address;

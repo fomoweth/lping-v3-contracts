@@ -11,8 +11,9 @@ import "./libraries/TransferHelper.sol";
 import "./libraries/Wrapper.sol";
 import "./base/Initializable.sol";
 import "./base/Multicall.sol";
+import "./base/ReentrancyGuard.sol";
 
-contract Client is IClient, Initializable, Multicall {
+contract Client is IClient, Initializable, Multicall, ReentrancyGuard {
     using TransferHelper for address;
 
     error InsufficientBalance();
@@ -213,9 +214,7 @@ contract Client is IClient, Initializable, Multicall {
         }
     }
 
-    receive() external payable {
-        // Wrapper.wrap(WETH, msg.value);
-    }
+    receive() external payable {}
 
     fallback() external payable {
         _fallback(slot().modules[msg.sig]);
