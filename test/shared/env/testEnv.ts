@@ -1,31 +1,24 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
+import { TracerEnvUser } from "hardhat-tracer";
 
 
 declare var hre: HardhatRuntimeEnvironment
 
-const DEFAULT_TRACER_CONFIG: TracerConfig = {
-	logs: true,
+const DEFAULT_TRACER_CONFIG: TracerEnvUser = {
+	logs: false,
 	calls: true,
 	sstores: false,
 	sloads: false,
-	gasCost: true,
+	gasCost: false,
 }
 
 interface TestEnvConfig {
 	title: string
 	tracer?: {
 		enabled: boolean
-		config?: TracerConfig
+		config?: TracerEnvUser
 	}
 	skipOptional?: boolean
-}
-
-interface TracerConfig {
-	logs: boolean
-	calls: boolean
-	sstores: boolean
-	sloads: boolean
-	gasCost: boolean
 }
 
 interface Spec {
@@ -41,6 +34,7 @@ export class TestEnv {
 	public readonly title: string
 	public readonly tests: Spec[]
 	public readonly skipOptional: boolean
+	public readonly tracer: TracerEnvUser
 
 	constructor(config: TestEnvConfig) {
 		this.title = config.title
@@ -57,14 +51,17 @@ export class TestEnv {
 			} = config.tracer.config || DEFAULT_TRACER_CONFIG
 
 			hre.tracer.enabled = true
-			hre.tracer.logs = logs
-			hre.tracer.calls = calls
-			hre.tracer.sstores = sstores
-			hre.tracer.sloads = sloads
-			hre.tracer.gasCost = gasCost
+			hre.tracer.logs = logs || false
+			hre.tracer.calls = calls || false
+			hre.tracer.sstores = sstores || false
+			hre.tracer.sloads = sloads || false
+			hre.tracer.gasCost = gasCost || false
+
 		} else {
 			hre.tracer.enabled = false
 		}
+
+		this.tracer = hre.tracer
 	}
 
 	public set(spec: Spec): this {
