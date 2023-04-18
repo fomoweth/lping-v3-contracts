@@ -1,10 +1,7 @@
-import { Price, Token } from "@uniswap/sdk-core";
-import { BigNumber, utils } from "ethers";
+import { utils } from "ethers";
 import { ethers } from "hardhat";
 
 import { SUSHI_CONTRACTS, UNISWAP_V2_CONTRACTS } from "../constants/addresses";
-import { PairType } from "../constants/enums";
-import { getTokens } from "../schema";
 
 import {
 	IUniswapV2Factory,
@@ -20,26 +17,6 @@ export interface PairState {
 	blockTimestampLast: number
 	price0CumulativeLast: string
 	price1CumulativeLast: string
-}
-
-export const getPairPrice = async (
-	baseTokenAddress: string,
-	quoteTokenAddress: string,
-	protocol: PairType
-): Promise<string> => {
-	const [baseToken, quoteToken] = getTokens([baseTokenAddress, quoteTokenAddress]).map((token) =>
-		new Token(1, token.address, token.decimals, token.symbol, token.name)
-	)
-
-	const pairAddress = computePairAddress(baseTokenAddress, quoteTokenAddress, protocol)
-	const pair = getPairContract(pairAddress)
-	const { reserve0, reserve1 } = await getPairState(pair)
-
-	const price = baseToken.sortsBefore(quoteToken)
-		? new Price(baseToken, quoteToken, reserve1, reserve0)
-		: new Price(baseToken, quoteToken, reserve0, reserve1)
-
-	return price.toFixed(quoteToken.decimals)
 }
 
 export const getPairState = async (pair: IUniswapV2Pair): Promise<PairState> => {
@@ -94,7 +71,7 @@ export const getPairWithMostLiquidity = async (token0Address: string, token1Addr
 	return pair
 }
 
-export const getV2Factory = (protocol: "UNI-V2" | "SLP"): IUniswapV2Factory => {
+const getV2Factory = (protocol: "UNI-V2" | "SLP"): IUniswapV2Factory => {
 	const factoryAddress = protocol === "UNI-V2"
 		? UNISWAP_V2_CONTRACTS.FACTORY
 		: SUSHI_CONTRACTS.FACTORY
@@ -104,7 +81,7 @@ export const getV2Factory = (protocol: "UNI-V2" | "SLP"): IUniswapV2Factory => {
 	return factory
 }
 
-export const getPairContract = (pairAddress: string): IUniswapV2Pair => {
+const getPairContract = (pairAddress: string): IUniswapV2Pair => {
 	const pool = IUniswapV2Pair__factory.connect(pairAddress, ethers.provider)
 
 	return pool

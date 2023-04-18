@@ -1,6 +1,6 @@
 import { BigNumber, BigNumberish } from "ethers";
 
-import { Assumption, Duration, PoolFee } from "../constants";
+import { Assumption, Duration, PoolFee } from "../constants/enums";
 
 import {
 	IClient__factory,
