@@ -1,0 +1,233 @@
+[
+    {
+        "address": "0xd3d2E2692501A5c9Ca623199D38826e513033a17",
+        "name": "UNI-WETH",
+        "type": "UNI-V2",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+                "name": "Uniswap",
+                "symbol": "UNI",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940",
+        "name": "WBTC-WETH",
+        "type": "UNI-V2",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+                "name": "Wrapped BTC",
+                "symbol": "WBTC",
+                "decimals": 8
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0x4028DAAC072e492d34a3Afdbef0ba7e35D8b55C4",
+        "name": "stETH-WETH",
+        "type": "UNI-V2",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+                "name": "Liquid staked Ether 2.0",
+                "symbol": "stETH",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974",
+        "name": "LINK-WETH",
+        "type": "UNI-V2",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+                "name": "ChainLink Token",
+                "symbol": "LINK",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0xDB44A4a457c87225B5Ba45F27B7828a4Cc03c112",
+        "name": "RBN-WETH",
+        "type": "UNI-V2",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x6123B0049F904d730dB3C36a31167D9d4121fA6B",
+                "name": "Ribbon",
+                "symbol": "RBN",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0x819f3450dA6f110BA6Ea52195B3beaFa246062dE",
+        "name": "MATIC-WETH",
+        "type": "UNI-V2",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+                "name": "Matic Token",
+                "symbol": "MATIC",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0xCEfF51756c56CeFFCA006cD410B03FFC46dd3a58",
+        "name": "WBTC-WETH",
+        "type": "SLP",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+                "name": "Wrapped BTC",
+                "symbol": "WBTC",
+                "decimals": 8
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0xC558F600B34A5f69dD2f0D06Cb8A88d829B7420a",
+        "name": "LDO-WETH",
+        "type": "SLP",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32",
+                "name": "Lido DAO Token",
+                "symbol": "LDO",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0x088ee5007C98a9677165D78dD2109AE4a3D04d0C",
+        "name": "YFI-WETH",
+        "type": "SLP",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+                "name": "yearn.finance",
+                "symbol": "YFI",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0xC40D16476380e4037e6b1A2594cAF6a6cc8Da967",
+        "name": "LINK-WETH",
+        "type": "SLP",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+                "name": "ChainLink Token",
+                "symbol": "LINK",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            }
+        ]
+    },
+    {
+        "address": "0x7B504a15ef05F4EED1C07208C5815c49022A0C19",
+        "name": "WETH-GRT",
+        "type": "SLP",
+        "tokens": [
+            {
+                "chainId": 1,
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "name": "Wrapped Ether",
+                "symbol": "WETH",
+                "decimals": 18
+            },
+            {
+                "chainId": 1,
+                "address": "0xc944e90c64b2c07662a292be6244bdf05cda44a7",
+                "name": "Graph Token",
+                "symbol": "GRT",
+                "decimals": 18
+            }
+        ]
+    }
+]

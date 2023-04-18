@@ -1,0 +1,57 @@
+[
+    {
+        "underlying": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "collateralMarket": "0x1b808F49ADD4b8C6b5117d9681cF7312Fcf0dC1D",
+        "borrowMarket": "0x62e28f054efc24b26A794F5C1249B6349454352C",
+        "tier": "collateral"
+    },
+    {
+        "underlying": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+        "collateralMarket": "0xbd1bd5C956684f7EB79DA40f582cbE1373A1D593",
+        "borrowMarket": "0x436548baAb5Ec4D79F669D1b9506D67e98927aF7",
+        "tier": "collateral"
+    },
+    {
+        "underlying": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+        "collateralMarket": "0x570a7e6E75C8043bd75B574D47988Aa305873818",
+        "borrowMarket": "0x8f222fC08bD508571FcE098cAB5Bb4095346a561",
+        "tier": "collateral"
+    },
+    {
+        "underlying": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "collateralMarket": "0x0275b156cD77c5ed82D44bCc5f9E93eECff20138",
+        "borrowMarket": "0x36c4A49F624342225bA45fcfc2e1A4BcBCDcE557",
+        "tier": "collateral"
+    },
+    {
+        "underlying": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+        "collateralMarket": "0xf1F2ECb2F271Ad31DD9204BFE91b8d1724E9d616",
+        "borrowMarket": "0x2C7299034ca3421FC7f29DF0077F6a11f0aA7fda",
+        "tier": "collateral"
+    },
+    {
+        "underlying": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+        "collateralMarket": "0x22784dd51676b5FB0E8362D187137f2ffFb9B848",
+        "borrowMarket": "0x4A91CfA82503159626D28d387D32f0960370B9b5",
+        "tier": "collateral"
+    },
+    {
+        "underlying": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b",
+        "collateralMarket": "0x198472C9e552c2aFc1B096D4f1A35c08A52ff100",
+        "borrowMarket": "0xB6A072Cc8786485aBF012D8c2763721B34b94c10",
+        "oraclePool": "0xb003df4b243f938132e8cadbeb237abc5a889fb4",
+        "tier": "isolated"
+    },
+    {
+        "underlying": "0xc944E90C64B2c07662A292be6244BDf05Cda44a7",
+        "collateralMarket": "0x7527aB44D17246e45dee859427749d0b3D581d79",
+        "borrowMarket": "0x5bdBC7bD13BD35dc4AAa5F33cd8693AeF46A2B90",
+        "tier": "isolated"
+    },
+    {
+        "underlying": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+        "collateralMarket": "0x323aa5Ff5Cc6593dB46c93b20cCFDD06412baF77",
+        "borrowMarket": "0xe4C391a5ff7F947D6C4E2eeCEe15B65c79E94e39",
+        "tier": "cross"
+    }
+]
