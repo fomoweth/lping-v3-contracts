@@ -57,9 +57,9 @@ npm test ./test/Client.ts
 
 ### Core
 
-**Client** - Contract that can be deployed by any user and is used for its owner to interact with added modules via `Multicall`.
+**Client** - Contract that can be deployed by any user and is used for its owner to interact with added modules.
 
-**Factory** - Contract that is used for deploying the `Client` contracts.
+**Factory** - Contract that is used for deploying the `Client` contracts and registering the `module` contracts.
 
 **Registry** - Contract that stores the addresses of `Factory` and `Adapter` contracts.
 
