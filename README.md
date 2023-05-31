@@ -57,21 +57,21 @@ npm test ./test/Client.ts
 
 ### Core
 
-**Client** - Contract that can be deployed by any user and is used for its owner to interact with added modules.
+**Client** - Contract that can be deployed by anyone permissionlessly and is used as the interface of `module` contracts to manage position.
 
-**Factory** - Contract that is used for deploying the `Client` contracts and registering the `module` contracts.
+**Factory** - Contract that is used for deploying the `Client` contracts and registering the `module` contracts by its owner.
 
 **Registry** - Contract that stores the addresses of `Factory` and `Adapter` contracts.
 
 ### Modules
 
-**ModuleManager** - Contract that is used for updating the states of module contracts for the `Client`.
+**ModuleManager** - Contract that is used for updating the states of `module` contracts for the `Client`.
 
-**NFTForwarder** - Contract that is used for forwarding the transactions to `NonfungiblePositionManager`.
+**NFTForwarder** - Contract that is used for forwarding the transactions to `NonfungiblePositionManager` for the `Client`.
 
 **DexAggregator** - Contract that is used for aggregating between different types of DEX pools. (`Uniswap V3 Pools` and `Uniswap V2 Pairs`)
 
-**LendingDispatcher** - Contract that is used for aggregating the lending protocols. (`Euler Finance`)
+**LendingDispatcher** - Contract that is used for aggregating between the lending protocols. (`Euler Finance`)
 
 ### Adapters
 
@@ -80,3 +80,5 @@ npm test ./test/Client.ts
 **V2Swap** - Contract that is used for forwarding the transactions to the `Uniswap V2 Pairs` via `DexAggregator`.
 
 **EulerAdapter** - Contract that is used for forwarding the transactions to the contracts of `Euler Finance` via `LendingDispatcher`.
+
+<a href="https://www.rkim.xyz/posts/lping-v3">Read more</a>
