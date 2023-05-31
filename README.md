@@ -9,7 +9,7 @@ This project is built to automate the process of lping on Uniswap V3 pools based
 ## Installation
 
 ```bash
-git clone https://github.com/own1t/lping-v3-contracts
+git clone https://github.com/fomoweth/lping-v3-contracts
 
 cd lping-v3-contracts
 
